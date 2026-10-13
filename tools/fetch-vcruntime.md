@@ -4,14 +4,14 @@ Games built with MSVC need the Visual C++ runtime. Those DLLs are authored by
 Microsoft and are **not** redistributable under this project's license, so they
 are not committed here. You supply them yourself.
 
-Twelve files are expected in `app/Madeira/x86_64-vcruntime/`:
+Fourteen files are expected in `app/Madeira/x86_64-vcruntime/` (twelve C++ runtime DLLs plus MFC's mfc140.dll and mfc140u.dll):
 
 ```
 concrt140.dll              msvcp140_codecvt_ids.dll   vcruntime140.dll
 msvcp140.dll               vcamp140.dll               vcruntime140_1.dll
 msvcp140_1.dll             vccorlib140.dll            vcruntime140_threads.dll
-msvcp140_2.dll             vcomp140.dll
-msvcp140_atomic_wait.dll
+msvcp140_2.dll             vcomp140.dll               mfc140.dll
+msvcp140_atomic_wait.dll                              mfc140u.dll
 ```
 
 ## How to get them
